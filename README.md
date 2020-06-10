@@ -1,4 +1,4 @@
-# WebMotors - Busca de Carros
+# WebMotors - Search Vehicles
 
 ##Getting Started
 The project runs on Node, React (with Next.js) and Sass.
