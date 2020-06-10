@@ -1,0 +1,274 @@
+body {
+  background-color: #f3f5f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input {
+  &:focus {
+    outline: 0;
+  }
+}
+.container {
+  width: 933px;
+  margin: 0 auto;
+}
+.logo {
+  margin: 1em 0;
+}
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  width: 40px;
+  margin: 0 0.8em;
+  opacity: 0.6;
+}
+.options {
+  display: flex;
+}
+.options__link {
+  display: flex;
+  margin-right: 1.5em;
+  text-transform: uppercase;
+  color: #999;
+  line-height: 22px;
+  border-bottom: 3px solid #f3f5f8;
+  cursor: pointer;
+  &:hover {
+    color: #f3123c;
+    border-bottom: 3px solid #f3123c;
+  }
+}
+.selected {
+  color: #f3123c;
+  border-bottom: 3px solid #f3123c;
+}
+.options__text {
+  display: flex;
+  font-size: 1.6em;
+  flex-direction: column;
+  margin: 7px 0;
+  justify-content: center;
+
+  small {
+    font-size: 16px;
+  }
+}
+.sale-car {
+  border: 2px solid orange;
+  color: orange;
+  padding: 10px 40px;
+  height: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  font-weight: 600;
+  font-size: 15px;
+  &:hover {
+    transition: all ease 0.2s;
+    border: 2px solid orange;
+    color: #fff;
+    background: orange;
+  }
+}
+form {
+  background-color: #fff;
+  padding: 2em 3em;
+}
+.checkboxes {
+  display: flex;
+  color: #999;
+  margin-bottom: 10px;
+}
+.checkboxes__box {
+  margin-right: 30px;
+  input {
+    width: 16px;
+    margin-right: 5px;
+  }
+}
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+select {
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  height: 36px;
+  padding: 5px 5px;
+  color: #666;
+  margin-bottom: 20px;
+  &:focus {
+    outline: 0;
+  }
+}
+.locale {
+  height: 34px;
+  border: 1px solid #ccc;
+  padding: 0 2px;
+  margin: 0;
+  width: 300px;
+  color: #999;
+}
+.distance {
+  width: 100px;
+}
+.make {
+  width: 200px;
+}
+.model {
+  width: 200px;
+  margin-right: 0;
+}
+.year {
+  width: 200px;
+}
+.price {
+  width: 200px;
+}
+.version {
+  width: 410px;
+  margin-right: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-avanced {
+  color: #f3123c;
+  font-size: 14px;
+  font-weight: bold;
+}
+.clear {
+  border: 0;
+  background: none;
+  color: #666;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.offers {
+  background: #f3123c;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px 65px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border: 2px solid #f3123c;
+  transition: all ease 0.2s;
+  font-weight: bold;
+  &:hover {
+    transition: all ease 0.2s;
+    background: #fff;
+    color: #f3123c;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+.boxes {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box {
+  background: #fff;
+  width: 30%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  .cute-img {
+    height: 200px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: auto;
+  }
+}
+.box__texts {
+  padding: 10px;
+}
+.box__title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 0;
+}
+.box_version {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: rgb(139, 140, 153);
+  height: 50px;
+}
+.box_price {
+  display: block;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #686976;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.box_info {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(139, 140, 153);
+  font-size: 12px;
+  p {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  select,
+  input {
+    width: 45% !important;
+    margin: 10px 20px 0 0 !important;
+  }
+  .buttons {
+    margin-top: 30px;
+  }
+  .checkboxes__box input {
+    width: 16px !important;
+  }
+  .box {
+    width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  select,
+  input {
+    width: 100% !important;
+    margin: 10px 20px 0 0 !important;
+  }
+  form {
+    padding: 10px;
+  }
+  .options__text {
+    font-size: 16px;
+  }
+  .sale-car {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40%;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+  }
+  .box {
+    width: 100%;
+  }
+}
